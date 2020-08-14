@@ -51,7 +51,7 @@ public class BookDAOImpl implements BookDAO {
 			ps.setInt(1, book.getBook_id());
 			ps.setString(2, book.getBook_name());
 			ps.setString(3, book.getBook_author());
-			ps.setString(3, book.getBook_publisher());
+			ps.setString(4, book.getBook_publisher());
 			ps.setString(5, book.getBook_owner());
 
 			int cnt = ps.executeUpdate();
